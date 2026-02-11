@@ -1,0 +1,236 @@
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ ./setup.sh
+🔧 Creazione ambiente di esercitazione...
+
+✅ Ambiente creato con successo!
+
+Struttura creata:
+esercizi
+├── documenti
+│   ├── lettere
+│   │   ├── lettera1.txt
+│   │   └── lettera2.txt
+│   └── report
+│       ├── 2023
+│       │   ├── vendite_q1.txt
+│       │   └── vendite_q2.txt
+│       └── 2024
+│           └── vendite_q1.txt
+├── immagini
+│   ├── lavoro
+│   └── vacanze
+├── permessi
+│   ├── eseguibile.sh
+│   ├── non_eseguibile.sh
+│   ├── privato.txt
+│   ├── pubblico.txt
+│   └── segreto.txt
+└── progetti
+    ├── script
+    │   ├── backup.sh
+    │   └── pulizia.sh
+    └── webapp
+        ├── docs
+        │   └── README.md
+        └── src
+            └── index.js
+
+15 directories, 14 files
+
+✅ Ambiente pronto!
+
+Puoi iniziare gli esercizi!
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ pwd
+/workspaces/lezione-bash-01-MarcoGiannini08
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ ls 
+README.md  esercizi  report.txt  sandbox  setup.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ cd e
+bash: cd: e: No such file or directory
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ cd esercizi/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ pwd
+/workspaces/lezione-bash-01-MarcoGiannini08/esercizi
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ ls
+documenti  immagini  permessi  progetti
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ cd documenti/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/documenti (main) $ cd report/
+@MarcoGiannini08 ➜ .../lezione-bash-01-MarcoGiannini08/esercizi/documenti/report (main) $ cd 2024
+@MarcoGiannini08 ➜ .../esercizi/documenti/report/2024 (main) $ cd /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/progetti/webapp/src/
+@MarcoGiannini08 ➜ .../esercizi/progetti/webapp/src (main) $ pwd
+/workspaces/lezione-bash-01-MarcoGiannini08/esercizi/progetti/webapp/src
+@MarcoGiannini08 ➜ .../esercizi/progetti/webapp/src (main) $ cd ../../../..
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ pwd
+/workspaces/lezione-bash-01-MarcoGiannini08
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ cd esercizi/documenti/lettere/
+@MarcoGiannini08 ➜ .../lezione-bash-01-MarcoGiannini08/esercizi/documenti/lettere (main) $ cd ../../immagini/vacanze/
+@MarcoGiannini08 ➜ .../lezione-bash-01-MarcoGiannini08/esercizi/immagini/vacanze (main) $ cd ~
+@MarcoGiannini08 ➜ ~ $ pwd
+/home/codespace
+@MarcoGiannini08 ➜ ~ $ cd -
+/workspaces/lezione-bash-01-MarcoGiannini08/esercizi/immagini/vacanze
+@MarcoGiannini08 ➜ .../lezione-bash-01-MarcoGiannini08/esercizi/immagini/vacanze (main) $ pwd
+/workspaces/lezione-bash-01-MarcoGiannini08/esercizi/immagini/vacanze
+@MarcoGiannini08 ➜ .../lezione-bash-01-MarcoGiannini08/esercizi/immagini/vacanze (main) $ cd /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ mkkdir test
+bash: mkkdir: command not found
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ mkdir test
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ls
+test
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ cd test
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/test (main) $ mkdir alfa beta gamma
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/test (main) $ ls
+alfa  beta  gamma
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/test (main) $ cd /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ mkdir livello1/livello2/livello3
+mkdir: cannot create directory ‘livello1/livello2/livello3’: No such file or directory
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ mkdir -p livello1/livello2/livello3
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ tree livello1/
+livello1/
+└── livello2
+    └── livello3
+
+3 directories, 0 files
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ cd /workspaces/lezione-bash-01-MarcoGiannini08/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ cd sandbox
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ mkdir -p archivio/{2022,2023,2024}/{entrate,uscite}
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ tree archivio/
+archivio/
+├── 2022
+│   ├── entrate
+│   └── uscite
+├── 2023
+│   ├── entrate
+│   └── uscite
+└── 2024
+    ├── entrate
+    └── uscite
+
+10 directories, 0 files
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ cd test
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/test (main) $ rmdir alfa
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/test (main) $ la
+beta  gamma
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/test (main) $ cd ..
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ rmdir livello1/
+rmdir: failed to remove 'livello1/': Directory not empty
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ rm -r livello1/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ls
+archivio  test
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ rm -r archivio/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ rm -r test
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ls
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ cd /workspaces/
+@MarcoGiannini08 ➜ /workspaces $ cd /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ òs
+bash: òs: command not found
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ ls
+documenti  immagini  permessi  progetti
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ ls -l
+total 16
+drwxrwxrwx+ 4 codespace codespace 4096 Feb 11 13:26 documenti
+drwxrwxrwx+ 4 codespace codespace 4096 Feb 11 13:26 immagini
+drwxrwxrwx+ 2 codespace codespace 4096 Feb 11 13:26 permessi
+drwxrwxrwx+ 4 codespace codespace 4096 Feb 11 13:26 progetti
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ cd ~
+@MarcoGiannini08 ➜ ~ $ ls
+java  nvm
+@MarcoGiannini08 ➜ ~ $ ls -a
+.  ..  .bash_history  .bash_logout  .bashrc  .cache  .conda  .config  .docker  .dotnet  .gitconfig  .hugo  .jupyter  .local  .maven  .minikube  .nvs  .oh-my-zsh  .php  .profile  .python  .rbenv  .ruby  .rvmrc  .vscode-remote  .zprofile  .zshrc  java  nvm
+@MarcoGiannini08 ➜ ~ $ ls -l /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi/
+total 20
+-rwxr-xr-x 1 codespace codespace 36 Feb 11 13:26 eseguibile.sh
+-rw-r--r-- 1 codespace codespace 41 Feb 11 13:26 non_eseguibile.sh
+-rw------- 1 codespace codespace 36 Feb 11 13:26 privato.txt
+-rw-r--r-- 1 codespace codespace 38 Feb 11 13:26 pubblico.txt
+---------- 1 codespace codespace 48 Feb 11 13:26 segreto.txt
+@MarcoGiannini08 ➜ ~ $ cd /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ ls -l
+total 20
+-rwxr-xr-x 1 codespace codespace 36 Feb 11 13:26 eseguibile.sh
+-rw-r--r-- 1 codespace codespace 41 Feb 11 13:26 non_eseguibile.sh
+-rw------- 1 codespace codespace 36 Feb 11 13:26 privato.txt
+-rw-r--r-- 1 codespace codespace 38 Feb 11 13:26 pubblico.txt
+---------- 1 codespace codespace 48 Feb 11 13:26 segreto.txt
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $  cat pubblico.txt 
+File pubblico - tutti possono leggere
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ cat privato.txt 
+File privato - solo il proprietario
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ cat segreto.txt 
+cat: segreto.txt: Permission denied
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ ./eseguibile.sh 
+Sono eseguibile!
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ ./non_eseguibile.sh
+bash: ./non_eseguibile.sh: Permission denied
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ ls .l /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/
+ls: cannot access '.l': No such file or directory
+/workspaces/lezione-bash-01-MarcoGiannini08/esercizi/:
+documenti  immagini  permessi  progetti
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ ls -l /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/
+total 16
+drwxrwxrwx+ 4 codespace codespace 4096 Feb 11 13:26 documenti
+drwxrwxrwx+ 4 codespace codespace 4096 Feb 11 13:26 immagini
+drwxrwxrwx+ 2 codespace codespace 4096 Feb 11 13:26 permessi
+drwxrwxrwx+ 4 codespace codespace 4096 Feb 11 13:26 progetti
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ cat segreto.txt 
+cat: segreto.txt: Permission denied
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ chmod u+r segreto.txt
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ cat segreto.txt
+File segreto - solo lettura per il proprietario
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ chmod u+x non_eseguibile.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ ./non_eseguibile.sh
+Script non eseguibile
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ ls -l non_eseguibile.sh
+-rwxr--r-- 1 codespace codespace 41 Feb 11 13:26 non_eseguibile.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi/permessi (main) $ cd /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ echo 'Ciao, sono uno script!' > saluta.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ./saluta.sh
+bash: ./saluta.sh: Permission denied
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ chmod +x saluta.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ./saluta.sh
+./saluta.sh: line 1: Ciao,: command not found
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ echo "Ciao, sono uno script!" > saluta.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ./saluta.sh
+./saluta.sh: line 1: Ciao,: command not found
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ mkdir -p azienda/{amministrazione/{fatture,contratti},sviluppo/{frontend,backend},risorse_umane/{assunzioni,stipendi}}
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ tree azienda
+azienda
+├── amministrazione
+│   ├── contratti
+│   └── fatture
+├── risorse_umane
+│   ├── assunzioni
+│   └── stipendi
+└── sviluppo
+    ├── backend
+    └── frontend
+
+10 directories, 0 files
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ rm -r azienda
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ls 
+saluta.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ls -l /esercizi/permessi/ 
+ls: cannot access '/esercizi/permessi/': No such file or directory
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ cd --
+@MarcoGiannini08 ➜ ~ $ cd /workspaces/lezione-bash-01-MarcoGiannini08/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ l
+README.md  esercizi/  report.txt  sandbox/  setup.sh*
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ cd esercizi/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/esercizi (main) $ cd -
+/workspaces/lezione-bash-01-MarcoGiannini08
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ le -l esercizi/permessi/
+bash: le: command not found
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ l -l esercizi/permessi/
+total 20
+-rwxr-xr-x 1 codespace codespace 36 Feb 11 13:26 eseguibile.sh*
+-rwxr--r-- 1 codespace codespace 41 Feb 11 13:26 non_eseguibile.sh*
+-rw------- 1 codespace codespace 36 Feb 11 13:26 privato.txt
+-rw-r--r-- 1 codespace codespace 38 Feb 11 13:26 pubblico.txt
+-r-------- 1 codespace codespace 48 Feb 11 13:26 segreto.txt
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08 (main) $ cd /workspaces/lezione-bash-01-MarcoGiannini08/sandbox/
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ cat << 'EOF' > segreto.sh
+> echo "Hai scoperto il segreto!"
+> EOF
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ chmod u=rwx,go= segreto.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ./segreto.sh
+Hai scoperto il segreto!
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ ls -l segreto.sh
+-rwx------ 1 codespace codespace 32 Feb 11 13:41 segreto.sh
+@MarcoGiannini08 ➜ /workspaces/lezione-bash-01-MarcoGiannini08/sandbox (main) $ 

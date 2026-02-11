@@ -1,3 +1,1 @@
-#!/bin/bash
-
-echo "Ciao, sono uno script!"
+Ciao, sono uno script!
